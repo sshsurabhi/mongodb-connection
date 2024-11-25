@@ -1,0 +1,58 @@
+)
+  ]
+  }
+    }}
+      "last_name":"$relationships.person.last_name"
+      {"first_name":"$relationships.person.first_name",
+    "employee":
+    {"_id":1,"society":"$name",
+  {$project : 
+  }, 
+    }
+      ]
+        {"relationships.person.last_name":"Musk"}
+        {"relationships.person.first_name":"Elon"}, 
+      [
+    {$and : 
+  {$match : 
+db.cie.aggregate([
+db.cie.aggregate([ { $match: { $and: [ { "relationships.person.first_name": "Elon" }, { "relationships.person.last_name": "Musk" }] } }, { $project: { "_id": 1, "society": "$name" } }] )
+db.cie.aggregate([ { $match: { $and: [ { "relationships.person.first_name": "Elon" }, { "relationships.person.last_name": "Musk" }] } }] )
+db.cie.aggregate([ { $match: { "acquisitions.company.name": "LittleBigPlanet" } }] )
+db.cie.aggregate([ { $match: { "offices.city": "Seattle" } }, { $project: { "_id": 1, "name": 1 } }] )
+db.cie.find( { "acquisitions": { "$elemMatch": { "price_currency_code": { "$ne": "USD" } } } }, { "name": 1, "_id": 0 } )
+db.cie.find( { "acquisitions": { "$elemMatch": { "price_currency_code": { "$ne": "USD" } } } }, { "name": 1, "_id": 0 } )
+db.cie.find( { "acquisitions": { "$elemMatch": { "acquired_year": 2010, "acquired_month": 3, "acquired_day": 2 } } }, { "name": 1 } )
+db.cie.find( { "acquisitions.0.acquired_year": { $gt: 2007 } }, { "name": 1, "founded_year": 1, "_id": 0 } )
+db.cie.findOne()
+use sample
+use cie
+db.cie.findOne()
+use cie
+exit
+db.zips.find({"state":"TX"},{"pop":1,"city":1})
+db.zips.find({"state": "TX"},{"pop":0})
+db.zips.find({},{"pop":1})
+db.zips.find({"state":"TX"},{"pop":1})
+db.zips.find().count()
+db.zips.find().limit(5).sort({"city":1})
+db.zips.find().limit(5)
+use sample
+db.zips.find().limit(5).sort({"city":1})
+db.zips.find().limit(5)
+db.grades.find().sort({"student_id":-1,"class_id":1})
+db.grades.find().sort({"student_id":-1})
+use sample
+ls
+db.grades.find().sort({"student_id":-1,"class_id":1})
+db.grades.find().sort({"student_id":-1})
+db.grades.findOne()
+exit
+db.grades.find( { "$expr": { $eq: ["$student_id", "$class_id"] } } )
+db.grades.find( { "$expr": { $eq: ["$student_id", "$class_id"] } } )
+db.zips.find({ $and: [ { "pop": { $lt: 20000 } }, { "pop": { $gt: 10000 } }] } )
+db.zips.find({"pop" : {$gte : 12678}})
+db.zips.findOne()
+use sample
+db.zips.find({"pop" : {$gte : 12678}})
+db.zips.findOne()
