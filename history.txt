@@ -1,0 +1,1000 @@
+  105  terraform apply -auto-approve
+  106  helm ls
+  107  cd charts/
+  108  terraform init
+  109  cd ..
+  110  ls
+  111  cd charts/
+  112  ls
+  113  terraform init
+  114  cd
+  115  cd kubernetes-datascientest/
+  116  terraform init
+  117  terraform plan
+  118  terraform apply -auto-approve
+  119  kubectl get all
+  120  helm ls
+  121  terraform destroy -auto-approve
+  122  /usr/local/bin/k3s-uninstall.sh
+  123  rm -rf ~/.kube/config
+  124  cd
+  125  mkdir data-aws
+  126  cd data-aws
+  127  nano provider.tf
+  128  touch instances.tf
+  129  nnano instances.tf 
+  130  nano instances.tf 
+  131  terraform init
+  132  terraform plan
+  133  terraform apply --auto-approve
+  134  terraform destroy --auto-approve
+  135  cd
+  136  curl -X GET "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  137  sudo apt install unzip
+  138  sudo unzip awscliv2.zip
+  139  sudo ./aws/install
+  140  aws --version
+  141  aws configure
+  142  mkdir my-terraform-project
+  143  cd my-terraform-project
+  144  terraform init
+  145  nano instances.tf
+  146  terraform plan
+  147  FIRST_NAME=SAI
+  148  aws ec2 create-key-pair --key-name "${FIRST_NAME}-datascientest_keypair" --query "KeyMaterial" --output text > "$(pwd)/datascientest_keypair.pem"
+  149  terraform plan
+  150  terraform init
+  151  terraform plan
+  152  terraform pterraform apply -var="first_name=SAI"
+  153  erraform pterraform apply -var="first_name=SAI"
+  154  terraform apply -var="first_name=SAI"
+  155  terraform destroy -var="first_name=SAI" --auto-approve
+  156  df -h
+  157  ls
+  158  cd
+  159  mkdir petclinic-iac-main-harsha
+  160  cd petclinic-iac-main-harsha/
+  161  ls
+  162  nano eks.tf
+  163  nano outputs.tf
+  164  nano provider.tf
+  165  nano rds.tf
+  166  nano vars.tf
+  167  nano vpc.tf
+  168  terraform init
+  169  nano backend.tf
+  170  terraform init
+  171  terraform plan
+  172  terraform apply
+  173  nano secret.tfvars
+  174  cd petclinic-iac-main-harsha/
+  175  terraform apply
+  176  terraform destroy
+  177  aws rds delete-db-instance --db-instance-identifier <your-db-instance-identifier> --skip-final-snapshot
+  178  aws rds delete-db-parameter-group --db-parameter-group-name <your-db-parameter-group-name>aws rds delete-option-group --option-group-name <your-option-group-name>
+  179  aws rds delete-db-subnet-group --db-subnet-group-name <your-db-subnet-group-name>
+  180  aws ec2 delete-security-group --group-id sg-042b13bfa2f6be3d3
+  181  terraform destroy
+  182  terraform init
+  183  terraform plan
+  184  yes
+  185  terraform plan
+  186  yes
+  187  aws rds describe-db-instances
+  188  aws --version
+  189  aws rds describe-db-instances --output json
+  190  nano ~/.aws/config
+  191  env | grep AWS
+  192  aws rds describe-db-instances
+  193  aws rds describe-db-instances --debug
+  194  aws configure list
+  195  aws rds describe-db-instances --region eu-west-3
+  196  cd petclinic-iac-main-harsha/
+  197  terraform init
+  198  terraform plan
+  199  yes
+  200  terraform apply
+  201  aws kms delete-alias --alias-arn arn:aws:kms:eu-west-3:472454369658:alias/eks/petclinic-eks
+  202  aws kms delete-alias --alias-name alias/eks/petclinic-eks
+  203  aws kms list-aliases --region eu-west-3
+  204  terraform destroy
+  205  aws rds delete-db-snapshot --db-snapshot-identifier rds:petclinic-db-2024-09-18-14-30
+  206  aws rds modify-db-instance --db-instance-identifier rds:petclinic-db-2024-09-18-14-30 --backup-retention-period 0 --apply-immediately
+  207  aws rds describe-db-instances
+  208  aws rds modify-db-instance --db-instance-identifier petclinic-db-2024-09-18-14-30 --backup-retention-period 0 --apply-immediately
+  209  aws rds describe-db-instances --db-instance-identifier petclinic-db-2024-09-18-14-30
+  210  aws --version
+  211  aws configure list
+  212  aws rds describe-db-instances --output json
+  213  aws configure set region eu-west-3
+  214  aws rds describe-db-instances --output json
+  215  aws configure set region eu-west-2
+  216  aws rds describe-db-instances --output jso
+  217  aws rds describe-db-instances --output json
+  218  aws configure set region eu-west-3
+  219  aws rds describe-db-instances --output json
+  220  terraform destroy
+  221  terraform apply -var-file="secrets.tfvars"
+  222  df -h
+  223  cd petclinic-iac-main-harsha/
+  224  terraform apply -var-file="secrets.tfvars"
+  225  terraform destroy -var-file="secrets.tfvars"
+  226  terraform apply -var-file="secrets.tfvars"
+  227  terraform destroy -var-file="secrets.tfvars"
+  228  terraform apply -var-file="secrets.tfvars"
+  229  git init
+  230  git commit -m "initial commit"
+  231  git add .
+  232  nano .gitignore
+  233  git add .
+  234  git remote add origin https://github.com/sshsurabhi/petclinic-iac-main-harsha.git
+  235  git push origin main
+  236  git commit -m "initial commit"
+  237  git push origin main
+  238  git push origin master
+  239  rm -rf .git
+  240  git init
+  241  git add .
+  242  git commit -m "initial commit"
+  243  git remote add origin git@github.com:Sri-Harsha-S/petclinic-iac-main-harsha.git
+  244  git push origin master
+  245  ssh-keygen -t ed25519 -C "srisurabhi5@gmail.com"
+  246  cat ~/.ssh/id_ed25519.pub
+  247  git push origin master
+  248  terraform destroy -var-file="secrets.tfvars"
+  249  git git checkout -bpersonal
+  250  git checkout -bpersonal
+  251  git add .
+  252  git commit -m "pushing for personal practice"
+  253  git push origin personal
+  254  git status
+  255  git add .
+  256  git commit -m "pushing for personal practice"
+  257  git push origin personal
+  258  git git checkout -bmaster
+  259  git checkout -b master
+  260  git checkout  master
+  261  git checkout -b personal
+  262  git checkout  personal
+  263  git checkout  master
+  264  git checkout  personal
+  265  nano Jenkinsfile
+  266  ls
+  267  cd petclinic-iac-main-harsha/
+  268  git status
+  269  aws configure
+  270  terraform init
+  271  terraform apply -var-file="secrets.tfvars"
+  272  terraform adestroy -var-file="secrets.tfvars"
+  273  terraform destroy -var-file="secrets.tfvars"
+  274  aws configure
+  275  git status
+  276  git checkout  master
+  277  git status
+  278  git checkout personal
+  279  git status
+  280  git add .
+  281  git commit -m 'added jenkinsfile'
+  282  git push origin personal
+  283  cd petclinic-iac-main-harsha/
+  284  git ststus
+  285  git status
+  286  cd petclinic-iac-main-harsha/
+  287  terraform init
+  288  cd ..
+  289  ls
+  290  ls -a
+  291  cd .aws/
+  292  ls
+  293  cat credentials 
+  294  ls
+  295  cd ..
+  296  cd petclinic-iac-main-harsha/
+  297  git status
+  298  git pull
+  299  git master
+  300  git checkout master
+  301  terraform init
+  302  terraform init --reconfigure
+  303  terraform plan
+  304  git checkout personal
+  305  git checkout master
+  306  terraform plan -var-file='secrets.tfvars' 
+  307  terraform apply -var-file='secrets.tfvars' -auto-approve
+  308  cd petclinic-iac-main-harsha/
+  309  git status
+  310  terraform destroy -var-file='secrets.tfvars' -auto-approve
+  311  cd petclinic-iac-main-harsha/
+  312  git status
+  313  terraform apply -var-file='secrets.tfvars' -auto-approve
+  314  terraform destroy -var-file='secrets.tfvars' -auto-approve
+  315  ls
+  316  cd 
+  317  pwd
+  318  ls
+  319  ls /usr/bin/
+  320  clear
+  321  man ls
+  322  ls -a
+  323  ls
+  324  cd petclinic-iac-main-harsha/
+  325  ls
+  326  aws configure
+  327  cd petclinic-iac-main-harsha/
+  328  ls
+  329  terraform destroy -var-file='secrets.tfvars' -auto-approve
+  330  kubectl version
+  331  terraform version
+  332  git version
+  333  jenkins version
+  334  Jenkins version
+  335  Jenkins --V
+  336  Jenkins --version
+  337  cd
+  338  kubectl version
+  339  curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
+  340  kubectl version
+  341  sudo usermod -aG docker jenkins
+  342  systemctl status jenkins
+  343  sudo chmod 755 /etc/rancher/k3s/k3s.yaml
+  344  kubectl version
+  345  sudo systemctl status jenkins
+  346  java --version
+  347  sudo systemctl status jenkins
+  348  java --version
+  349  sudo apt update
+  350  sudo apt list --upgradable
+  351  sudo apt upgrade -y
+  352  sudo apt autoremove
+  353  java --version
+  354  sudo apt install fontconfig openjdk-17-jre -y
+  355  sudo systemctl status jenkins
+  356  curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  357  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  358  sudo apt-get update
+  359  sudo apt-get install jenkins -y
+  360  cd petclinic-iac-main-harsha/
+  361  ls
+  362  terraform destroy -var-file='secrets.tfvars' -auto-approve
+  363  terraform apply -var-file='secrets.tfvars' -auto-approve
+  364  terraform destroy -var-file='secrets.tfvars' -auto-approve
+  365  helm ls
+  366  kubectl version
+  367  kubectl get nodes
+  368  kubectl cluster-info
+  369  helm ls --debug
+  370  helm uninstall
+  371  helm ls
+  372  sudo apt-get purge helm
+  373  sudo apt-get purge helm -y && sudo rm -rf /etc/helm/
+  374  helm create petclinic
+  375  helm ls
+  376  kubectl config get-contexts
+  377  helm config
+  378  helm reset
+  379  helm version
+  380  kubectl vesion
+  381  kubectl version
+  382  kubectl get namespaces
+  383  kubectl get pods
+  384  kubectl get all
+  385  kubectl get nodes
+  386  git clone https://github.com/Sri-Harsha-S/Helm-Chart-Practice-K8S.git
+  387  cd Helm-Chart-Practice-K8S/
+  388  ls
+  389  cd ..
+  390  helm install petclinic Helm-Chart-Practice-K8S/ -f Helm-Chart-Practice-K8S/prod-values.yaml 
+  391  helm install petclinic Helm-Chart-Practice-K8S -f Helm-Chart-Practice-K8S/prod-values.yaml 
+  392  kubectl version
+  393  helm install petclinic Helm-Chart-Practice-K8S -f Helm-Chart-Practice-K8S/prod-values.yaml 
+  394  helm ls
+  395  helm version
+  396  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+  397  chmod 700 get_helm.sh
+  398  ./get_helm.sh 
+  399  helm ls
+  400  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+  401  chmod 700 get_helm.sh
+  402  ./get_helm.shhelm list
+  403  helm list
+  404  helm reset
+  405  helm --help
+  406  rm -rf Helm-Chart-Practice-K8S/
+  407  kubectl version
+  408  helm ls
+  409  sudo systemctl status jenkins
+  410  java --version
+  411  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  412  docker version
+  413  docker login
+  414  sudo usermod -aG docker jenkins
+  415  sudo systemctl status jenkins
+  416  aws configure
+  417  sudo -S chmod 777 /var/run/docker.sock
+  418  docker ps
+  419  docker ps -a
+  420  -a
+  421  docker images
+  422  sudo usermod -aG docker jenkinsRUN apt-get update && apt-get install gcc -y && apt-get clean && echo "Output: $(apt-get update)"
+  423  sudo apt-get update && apt-get install gcc -y && apt-get clean && echo "Output: $(apt-get update)"
+  424  sudo apt-get update && apt-get install gcc -y && apt-get clean
+  425  sudo apt-get update
+  426  sudo apt-get upgrade
+  427  sudo apt upgrade
+  428  sudo apt-get autoremove
+  429  sudo apt-get install gcc -y && apt-get clean && echo "Output: $(apt-get update)"
+  430  sudo apt-get install gcc -y && sudo apt-get clean && echo "Output: $(apt-get update)"
+  431  sudo apt-get install gcc -y && sudo apt-get clean && sudo echo "Output: $(apt-get update)"
+  432  apt-get update && apt-get install gcc -y && apt-get clean && echo "Output: $(apt-get update)"
+  433  sudo  echo "Output: $(apt-get update)"
+  434  sudo apt update
+  435  sudo apt upgrade
+  436  sudo apt-get install ca-certificates curl gnupg lsb-release -y
+  437  sudo mkdir -p /etc/apt/keyrings
+  438  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  439  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  440  sudo apt-get update -y
+  441  sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+  442  sudo usermod -aG docker jenkins
+  443  git clone https://github.com/Sri-Harsha-S/jenkins-k8s-conclusion.git
+  444  cd jenkins-k8s-conclusion/
+  445  docker-compose up -d
+  446  docker-compose down
+  447  docker-compose up -d
+  448  docker-compose down
+  449  sudo systemctl restart jenkins
+  450  sudo systemctl restart docker
+  451  sudo visudo
+  452  mvn --version
+  453  sudo apt update
+  454  apt list --upgradable
+  455  sudo apt upgrade
+  456  sudo apt autoremove
+  457  sudo apt install maven
+  458  mvn --version
+  459  df -h
+  460  rm -rf jenkins-k8s-conclusion/
+  461  docker ps
+  462  docker ps -a
+  463  docker rmi 03dd6b22a73a
+  464  ls
+  465  docker images
+  466  docker rmi 050ed48532b2 46551aa26ffd 8798fc867897 f0413021f244 403ccc5d7a43 535a019e19c7 64bb3bfe696b 64bb3bfe696b 64bb3bfe696b 4ded87660ce6 52b1e1258ad9 52b1e1258ad9 52b1e1258ad9 4f108e4453cf 4f108e4453cf 4f108e4453cf ced303760120 050ed48532b2 9eb0a1104a9a 9eb0a1104a9a 9eb0a1104a9a 9adf119ca822
+  467  docker images
+  468  docker rmi 050ed48532b2 46551aa26ffd 8798fc867897 f0413021f244 403ccc5d7a43 535a019e19c7 64bb3bfe696b 64bb3bfe696b 64bb3bfe696b 4ded87660ce6 52b1e1258ad9 52b1e1258ad9 52b1e1258ad9 4f108e4453cf 4f108e4453cf 4f108e4453cf ced303760120 050ed48532b2 9eb0a1104a9a:latest 9eb0a1104a9a:1.0.24 9eb0a1104a9a: 9adf119ca822
+  469  docker images
+  470  docker rmi 535a019e19c7
+  471  docker ps
+  472  docker ps -a
+  473  docker remove 03dd6b22a73a
+  474  docker ps -a
+  475  docker images
+  476  df -h
+  477  cd /var/lib/jenkins/
+  478  ls
+  479  cd workspace/
+  480  ls
+  481  rm -rf Build-andPush-to-ECR@tmp/
+  482  sudo rm -rf Build-andPush-to-ECR@tmp/
+  483  sudo rm -rf Build-and-Push-Helm-to-ECR@tmp/
+  484  sudo rm -rf Build-and-Push-to-ECR@tmp/
+  485  df -h
+  486  ls
+  487  rm -rf Build-andPush-to-ECR/
+  488  sudo rm -rf Build-andPush-to-ECR/
+  489  ls
+  490  cd
+  491  cd jenkins-k8s-conclusion/
+  492  ls
+  493  rm -rf jenkins-k8s-conclusion/
+  494  cd
+  495  rm -rf jenkins-k8s-conclusion/
+  496  sudo rm -rf jenkins-k8s-conclusion/
+  497  cd /var/lib/jenkins/
+  498  cd workspace/
+  499  ls
+  500  cd
+  501  git clone https://github.com/Sri-Harsha-S/Helm-Chart-Practice-K8S.git
+  502  git status
+  503  cd Helm-Chart-Practice-K8S/
+  504  git status
+  505  git add .
+  506  git commit -m 'prod-values.yaml updated'
+  507  git pull
+  508  git push
+  509  cd
+  510  cd /var/lib/jenkins/.kube
+  511  sudo cd /var/lib/jenkins/.kube
+  512  ls
+  513  aws eks update-kubeconfig --name petclinic-eks --region eu-west-3
+  514  chmod 644 /var/lib/jenkins/.kube/config
+  515  sudo chmod 644 /var/lib/jenkins/.kube/config
+  516  sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  517  sudo chown $(whoami) ~/.kube/config
+  518  export KUBECONFIG=~/.kube/config
+  519  cd /var/lib/jenkins/.kube/
+  520  sudo cd /var/lib/jenkins/.
+  521  cd /var/lib/jenkins/
+  522  ls -l
+  523  ls -a
+  524  cd .kube/
+  525  sudo cd .kube/
+  526  sudo ls .kube/
+  527  cd
+  528  kubectl config get-contexts
+  529  aws eks update-kubeconfig --name petclinic-eks --region eu-west-3
+  530  export KUBECONFIG=~/.kube/config
+  531  kubectl config get-contexts
+  532  sudo ls .kube/
+  533  cd /var/lib/jenkins/
+  534  ls -a
+  535  sudo ls .kube/
+  536  sudo cp /etc/rancher/k3s/k3s.yaml /.kube/config
+  537  sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  538  sudo ls .kube/
+  539  sudo cp /etc/rancher/k3s/k3s.yaml .kube/config
+  540  sudo ls .kube/
+  541  ls
+  542  cd logs
+  543  ls
+  544  cd ..
+  545  cd jobs/
+  546  ls
+  547  cd ..
+  548  cd workspace/
+  549  ls
+  550  cd
+  551  kubectl get namespaces
+  552  aws eks update-kubeconfig --name petclinic-eks --region eu-west-3
+  553  export KUBECONFIG=~/.kube/config
+  554  kubectl get namespaces
+  555  kubectl delete namespaces argocd
+  556  df -h
+  557  sudo apt autoremove
+  558  cd /var/lib/jenkins/workspace/
+  559  ls
+  560  rm -rf Build-and-Push-Helm-to-ECR@tmp/ Build-and-Push-to-ECR@tmp/ petclinic-ci-cd@tmp/
+  561  sudo rm -rf Build-and-Push-Helm-to-ECR@tmp/ Build-and-Push-to-ECR@tmp/ petclinic-ci-cd@tmp/
+  562  ls
+  563  cd ..
+  564  ls
+  565  cd logs/
+  566  ls
+  567  cd tasks/
+  568  ls
+  569  cd .
+  570  cd ..
+  571  ls
+  572  free
+  573  cd ..
+  574  ls
+  575  cd /var/lib/jenkins/
+  576  ls
+  577  cd workspace/
+  578  ls
+  579  cd ..
+  580  ls -l
+  581  ls -a
+  582  ls -l
+  583  du -h
+  584  ls
+  585  ls -l
+  586  ls -a
+  587  rm -rf .m2
+  588  sudo rm -rf .m2
+  589  ls -l
+  590  a
+  591  ls -a
+  592  df -h
+  593  docker images
+  594  docker ps
+  595  docker ps -a
+  596  docker rmi 5e59f29ecff5 b8c794c3267d 92a5c78df0b4 535a019e19c7 4f108e4453cf d7b4405743d8 d7b4405743d8:latest 52b1e1258ad9 b0229559e995 
+  597  docker images
+  598  docker rmi d7b4405743d8
+  599  docker rmi d7b4405743d8:latest
+  600  docker rmi d7b4405743d8:latest -f
+  601  docker rmi d7b4405743d8 -f
+  602  docker images
+  603  docker rmi b061dbc2ff00 -f
+  604  docker images
+  605  docker rmi 95cc3840a7a3 -f
+  606  docker rmi b0229559e995 -f
+  607  docker rmi 95cc3840a7a3 -f
+  608  docker images
+  609  docker rmi 9eb0a1104a9a -f
+  610  docker rmi 64bb3bfe696b -f
+  611  docker images
+  612  df -h
+  613  cd
+  614  ls
+  615  df -h
+  616  cd ..
+  617  ls
+  618  df -h
+  619  cd /var/lib/jenkins/
+  620  du -h 
+  621  cd ..
+  622  ls
+  623  du -h
+  624  cd .
+  625  ls
+  626  ls -a
+  627  cd ./
+  628  ls -a
+  629  cd tmp/
+  630  ls -a
+  631  cd
+  632  cd ./var
+  633  sudo apt-get autoclean
+  634  sudo apt-get autoremove
+  635  sudo apt install ncdu
+  636  sudo ncdu
+  637  sudo apt uninstall ncdu
+  638  sudo apt remove ncdu
+  639  cd /var/lib/jenkins/workspace/
+  640  ls
+  641  cd /var/lib/jenkins/workspace/
+  642  ls
+  643  rm -rf petclinic-ci-cd@tmp/
+  644  sudo rm -rf petclinic-ci-cd@tmp/
+  645  cd /var/lib/jenkins/workspace/
+  646  ls
+  647  rm -rf Build-and-Push-to-ECR@tmp/ Build-and-Push-Helm-to-ECR@tmp/
+  648  sudo rm -rf Build-and-Push-to-ECR@tmp/ Build-and-Push-Helm-to-ECR@tmp/
+  649  ls /var/lib/jenkins/.kube/
+  650  sudo ls /var/lib/jenkins/.kube/
+  651  sudo chmod 755 /var/lib/jenkins/.kube
+  652  sudo chmod 644 /var/lib/jenkins/.kube/config
+  653  lssudo usermod -aG docker jenkins
+  654  sudo usermod -aG docker jenkins
+  655  sudo visudo
+  656  aws eks update-kubeconfig --name petclinic-eks
+  657  ls
+  658  rm -rf petclinic-ci-cd@2 petclinic-ci-cd@tmp/ petclinic-ci-cd@2@tmp/
+  659  sudo rm -rf petclinic-ci-cd@2 petclinic-ci-cd@tmp/ petclinic-ci-cd@2@tmp/
+  660  ls
+  661  sudo ls /var/lib/jenkins/.kube/
+  662  ls
+  663  cd /var/lib/jenkins/workspace/
+  664  ls
+  665  rm -rf petclinic-ci-cd@tmp/
+  666  sudo rm -rf petclinic-ci-cd@tmp/
+  667  cd ..
+  668  ls
+  669  aws eks update-kubeconfig --name petclinic-eks
+  670  kubectl get namespaces
+  671  cd
+  672  cd petclinic-iac-main-harsha/
+  673  ls
+  674  kubectl get nodes
+  675  kubectl get pods
+  676  kubectl get pods -n production
+  677  df -h
+  678  terraform destroy
+  679  helm ls
+  680  aws eks update-kubeconfig --name petclinic-eks
+  681  helm ls
+  682  aws eks update-kubeconfig --name petclinic-ekssudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  683  sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  684  sudo chown $(whoami) ~/.kube/config
+  685  helm ls
+  686  helm uninstall petclinic
+  687  aws eks update-kubeconfig --name petclinic-eks
+  688  cd /var/lib/jenkins/workspace/
+  689  ls
+  690  sudo rm -rf Create-AWS-Infra-and-deploy-helm-to-EKS@tmp/ petclinic-ci-cd@tmp/ 
+  691  sudo rm -rf .
+  692  sudo rm -rf  petclinic-ci-cd/ Build-and-Push-to-ECR/ Build-and-Push-Helm-to-ECR/
+  693  sudo systemctl restart jenkins
+  694  cd
+  695  #ld
+  696  ls
+  697  ls -a
+  698  sudo visudo
+  699  cd .kube/
+  700  ls
+  701  cat config 
+  702  rm -f config 
+  703  pwd
+  704  cd ..
+  705  aws eks update-kubeconfig --name petclinic-eks
+  706  cd /var/lib/jenkins/
+  707  ls
+  708  ls -l
+  709  ls -a
+  710  sudocats .kube/config
+  711  sudo cat .kube/config
+  712  sudo rm -f .kube/config
+  713  aws eks update-kubeconfig --name petclinic-eks
+  714  ls
+  715  ls -a
+  716  cat .kube/config 
+  717  ls /var/lib/jenkins/
+  718  ls -a /var/lib/jenkins/
+  719  cat /var/lib/jenkins/.kube/config 
+  720  sudo cat /var/lib/jenkins/.kube/config 
+  721  helm ls
+  722  kubectl config get-contexts
+  723  kubectl get pods
+  724  kubectl get namespace
+  725  kubectl get pods -n default
+  726  kubectl config current-context
+  727  kubectl config view
+  728  helm ls
+  729  kubectl get pods -n default
+  730  helm ls -n default
+  731  ls -a
+  732  cat .kube/config 
+  733  helm ls
+  734  kubectl get namespaces
+  735  helm describe
+  736  helm --help
+  737  helm list
+  738  pwd
+  739  ls
+  740  ls -a
+  741  cat .kube/config 
+  742  helm --help
+  743  helm show petclinic
+  744  helm show petclinic-0.1.0
+  745  helm status
+  746  helm show
+  747  helm show chart
+  748  helm show all
+  749  helm show all petclinic-0.1.0
+  750  cd /var/lib/jenkins/workspace/
+  751  ls
+  752  terraform version
+  753  kubectl version
+  754  helm version
+  755  aws config
+  756  aws configure
+  757  df -h
+  758  ls -A
+  759  ls -l
+  760  ls -sh
+  761  cd /var/lib/jenkins/workspace/
+  762  ls
+  763  rm -rf Create-AWS-Infra-and-deploy-helm-to-EKS
+  764  sudo rm -rf Create-AWS-Infra-and-deploy-helm-to-EKS
+  765  sudo rm -rf Create-AWS-Infra-and-deploy-helm-to-EKS@tmp/
+  766  df -h
+  767  systemctl status jenkins
+  768  sudo apt uninstall jenkins
+  769  sudo apt remove jenkins
+  770  sudo apt upgrade
+  771  sudo apt autoremove -y
+  772  sudo apt autoclean-y
+  773  sudo apt autoclean -y
+  774  df -h
+  775  cd ..
+  776  cd
+  777  cd ..
+  778  ls
+  779  ls -l
+  780  ls -a
+  781  cd
+  782  ls
+  783  aws configure
+  784  git clone https://github.com/sshsurabhi/terraform-conclusion.git
+  785  rm -rf terraform-conclusion/
+  786  mkdir terraform_conclusion
+  787  cd terraform_conclusion/
+  788  df -h
+  789  cd terraform_conclusion/
+  790  terraform init
+  791  terraform plan
+  792  terraform apply
+  793  terraform destroy
+  794  terraform init
+  795  terraform plan
+  796  yes
+  797  terraform plan
+  798  terraform apply
+  799  terraform destroy
+  800  terraform plan
+  801  cd
+  802  git clone https://github.com/MatiasRoje/dst-terraform-exam.git
+  803  cd dst-terraform-exam/
+  804  terraform init
+  805  terraform init -reconfigure
+  806  terraform plan
+  807  terraform apply
+  808  terraform destroy
+  809  cd
+  810  cd terraform_final/
+  811  terraform init
+  812  terraform plan
+  813  terraform apply
+  814  terraform destroy
+  815  terraform init
+  816  terraform plan
+  817  terraform apply
+  818  terraform destroy
+  819  cd
+  820  cd terraform-project-final/
+  821  git init
+  822  nan
+  823  nano .gitignore
+  824  git add .
+  825  git remote add origin https://github.com/sshsurabhi/terraform-project-final.git
+  826  git commit -m "first commit"
+  827  git push origin main
+  828  git push origin master
+  829  ls -l
+  830  ls -a
+  831  rm -rf .git
+  832  git init
+  833  git add .
+  834  git clone https://github.com/MatiasRoje/dst-terraform-exam.git
+  835  cd dst-terraform-exam/
+  836  terraform init
+  837  terraform init -reconfigure
+  838  terraform plan
+  839  terraform apply
+  840  terraform destroy
+  841  terraform init -reconfigure
+  842  terraform plan
+  843  terraform apply
+  844  terraform destroy
+  845  cd
+  846  cd terraform-project-final/
+  847  terraform init -reconfigure
+  848  terraform plan
+  849  terraform apply
+  850  cd
+  851  cd terraform-project-final/
+  852  terraform destroy
+  853  cd
+  854  df -h
+  855  cd terraform-project-final/
+  856  git init
+  857  git add .
+  858  git commit -m "first commit"
+  859  git remote add origin https://github.com/Sri-Harsha-S/terraform-project-final.git
+  860  git push
+  861  git push origin master
+  862  cd terraform-project-final/
+  863  git status
+  864  git add .
+  865  git commit -m "README Updated"
+  866  git push origin master
+  867  cd petclinic-iac-main-harsha/
+  868  ls
+  869  git status
+  870  rm -rf .git
+  871  cat ~/.ssh/id_ed25519.pub 
+  872  ssh-keygen
+  873  cat ~/.ssh/id_rsa.pub 
+  874  git remote add origin https://github.com/sshsurabhi/petclinic-iac-main-harsha.git
+  875  t init
+  876  git init
+  877  git remote add origin https://github.com/sshsurabhi/petclinic-iac-main-harsha.git
+  878  git add .
+  879  git commit -m "files added and README Updated"
+  880  git push origin master
+  881  git remote set-url origin https://github.com/sshsurabhi/petclinic-iac-main-harsha.git
+  882  git push origin master
+  883  git remote set-url origin git@github.com:sshsurabhi/petclinic-iac-main-harsha.git
+  884  git push origin master
+  885  systemctl status jenkins
+  886  df -h
+  887  ls
+  888  mkdir Ansible-Practice
+  889  cd Ansible-Practice/
+  890  nano instance-state.py
+  891  python
+  892  python3
+  893  python3 instance-state.py 
+  894  sudo apt install boto3
+  895  sudo snap install boto3
+  896  pip install boto3
+  897  python3 instance-state.py 
+  898  mongod --version
+  899  mkdir mongodb-project
+  900  cd mongodb-project/
+  901  docker-compose.yml
+  902  nano docker-compose.yml
+  903  docker-compose up -d 
+  904  df -h
+  905  git global --username
+  906  git config --global user.name
+  907  git config --global user.name "sshsurabhi"
+  908  git config --global user.name
+  909  git config --global user.email "surabhi.harsha@gmail.com"
+  910  git config --global user.email
+  911  cd 
+  912  cd petclinic-iac-main-harsha/
+  913  git status
+  914  cd
+  915  rm -rf aws
+  916  sudo rm -rf aws
+  917  ls
+  918  df -h
+  919  cd M
+  920  cd mongodb-project/
+  921  docker-compose up -d 
+  922  docker exec -it my_mongo bash 
+  923  sudo apt autoremove -y
+  924  sudo apt autoclean -y
+  925  sudo apt clean -y
+  926  sudo apt upgrade -y
+  927  sudo apt updatee -y
+  928  cd
+  929  sudo apt update
+  930  df -h
+  931  sudo apt update
+  932  sudo apt upgrade -y
+  933  sudo apt autoremove -y
+  934  sudo apt autoclean -y
+  935  sudo apt clean -y
+  936  df -h
+  937  cd mongodb-project/
+  938  docker exec -it my_mongo bash 
+  939  docker ps
+  940  docker images
+  941  docker stop my_mongo
+  942  docker rm my_mongo
+  943  sudo rm -rf sample_training
+  944  ls
+  945  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/companies.json
+  946  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/grades.json
+  947  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/zips.json
+  948  docker exec -it my_mongo bash 
+  949  docker-compose up -d 
+  950  docker exec -it my_mongo bash 
+  951  df -h
+  952  cd mongodb-project/
+  953  docker exec -it my_mongo bash
+  954  ls
+  955  docker-compose up -d
+  956  docker exec -it my_mongo bash 
+  957  mongosh -u datascientest -p dst123
+  958  docker exec -it my_mongo bash
+  959  docker stop my_mongo
+  960  docker rm my_mongo
+  961  sudo rm -rf sample_training
+  962  mkdir sample_training
+  963  cd sample_training
+  964  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/companies.json
+  965  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/grades.json
+  966  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/zips.json
+  967  cd ..
+  968  docker-compose up -d
+  969  docker exec -it my_mongo bash
+  970  docker-compose up -d
+  971  docker exec -it my_mongo bash
+  972  cd mongodb-project/
+  973  docker exec -it my_mongo bash
+  974  docker-compose up -d
+  975  docker exec -it my_mongo bash
+  976  docker stop my_mongo
+  977  docker rm my_mongo
+  978  sudo rm -rf sample_training
+  979  mkdir sample_training
+  980  cd sample_training
+  981  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/companies.json
+  982  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/grades.json
+  983  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/zips.json
+  984  cd ..
+  985  docker-compose up -d
+  986  docker exec -it my_mongo bash
+  987  docker-compose down
+  988  pip list
+  989  pip listpip3 install pymongo
+  990  pip3 list
+  991  pip install pymongo
+  992  client = MongoClient(
+  993  nano connect_mongo.py
+  994  python connect_mongo.py
+  995  python
+  996  python3
+  997  python3 connect_mongo.py 
+  998  nano connect_mongo.py
+  999  python3 connect_mongo.py 
+ 1000  docker-compose up -d
+ 1001  python3 connect_mongo.py 
+ 1002  nano connect_mongo.py
+ 1003  python3 connect_mongo.py 
+ 1004  nano connect_mongo.py
+ 1005  python3 connect_mongo.py 
+ 1006  nano weather_db_training.py
+ 1007  python3 weather_db_training.py 
+ 1008  echo $weather
+ 1009  echo $WEATHER
+ 1010  curl "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY_HERE"
+ 1011  #
+ 1012  curl "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY_HERE"
+ 1013  python3 weather_db_training.py 
+ 1014  cd sample_training/
+ 1015  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/books.json
+ 1016  python3
+ 1017  cd ..
+ 1018  nano mongodb_task.py
+ 1019  python3 mongodb_task.py 
+ 1020  cd sample_training/
+ 1021  mongoimport -d sample -c books --authenticationDatabase admin --username datascientest --password dst123 --file data/db/books.json
+ 1022  docker exec -it my_mongo bash
+ 1023  cd ..
+ 1024  python3 mongodb_task.py 
+ 1025  cd mongodb-project/
+ 1026  cd
+ 1027  mv mongodb-project mongodb-connection
+ 1028  cd mongodb-connection/
+ 1029  ls
+ 1030  git config user.name
+ 1031  cat ~/.ssh/id_rsa.pub 
+ 1032  git init
+ 1033  rm -rf .git/
+ 1034  git init --initial-branch=main
+ 1035  git init
+ 1036  git remote add origin git@gitlab.com:gitlab-group-ds-devops/mongodb-connection.git
+ 1037  git add .
+ 1038  sudo chown -R ubuntu:ubuntu sample_training/
+ 1039  sudo chmod -R u+w sample_training/
+ 1040  git add .
+ 1041  git commit -m "Initial commit"
+ 1042  git push --set-upstream origin main
+ 1043  git push  origin main
+ 1044  git push  origin master
+ 1045  rm -rf .git
+ 1046  git init
+ 1047  git remote add origin https://github.com/Sri-Harsha-S/mongodb-connection.git
+ 1048  git add .
+ 1049  git commit -m "Initial commit"
+ 1050  git status
+ 1051  git push  origin master
+ 1052  rm -rf .git
+ 1053  git init
+ 1054  git remote add origin git@github.com:sshsurabhi/mongodb-connection.git
+ 1055  git add .
+ 1056  git commit -m "Initial commit"
+ 1057  git push  origin master
+ 1058  python3 mongodb_task.py 
+ 1059  docker ps
+ 1060  docker ps -a
+ 1061  docker-compose up -d
+ 1062  docker-compose down
+ 1063  docker-compose up -d
+ 1064  docker stop my_mongo
+ 1065  docker-compose up -d
+ 1066  docker stop my_mongo
+ 1067  docker rm my_mongo
+ 1068  sudo rm -rf sample_training
+ 1069  mkdir sample_training
+ 1070  cd sample_training
+ 1071  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/books.json
+ 1072  docker-compose up -d
+ 1073  docker exec -it my_mongo bash
+ 1074  cd ..
+ 1075  python3 mongodb_task.py 
+ 1076  python3 mongodb_task.py > res.txt
+ 1077  git status
+ 1078  python3 mongodb-connection.py > result_.txt
+ 1079  nano .gitignore
+ 1080  git status
+ 1081  cd sampl
+ 1082  cd sample_training/
+ 1083  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/companies.json
+ 1084  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/grades.json
+ 1085  sudo wget https://dst-de.s3.eu-west-3.amazonaws.com/mongo_fr/zips.json
+ 1086  git status
+ 1087  cd ..
+ 1088  git status
+ 1089  git add .
+ 1090  git rm --cached sample_training/
+ 1091  git rm --cached s -r sample_training/
+ 1092  git rm --cached -r sample_training/
+ 1093  git add .
+ 1094  sudo chown -R ubuntu:ubuntu sample_training/
+ 1095  sudo chmod -R u+w sample_training/
+ 1096  git add .
+ 1097  git commit -m ".gitignore file has been added"
+ 1098  git push  origin master
+ 1099  git rm --cached -r sample_training/
+ 1100  git status
+ 1101  git add .
+ 1102  git status
+ 1103  git commit -m "codes modifed and simpled the implementation"
+ 1104  history > history.txt
