@@ -1,0 +1,4 @@
+sample_training/.mongodb
+*.lock
+*.bson
+*.wt

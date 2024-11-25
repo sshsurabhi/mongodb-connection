@@ -1,0 +1,322 @@
+'available dbs are:'
+['admin', 'config', 'local', 'sample']
+'total colections are:'
+['books']
+'one of the documents in the books collection'
+{'_id': 1,
+ 'authors': ['W. Frank Ableson', 'Charlie Collins', 'Robi Sen'],
+ 'categories': ['Open Source', 'Mobile'],
+ 'isbn': '1933988673',
+ 'longDescription': 'Android is an open source mobile phone platform based on '
+                    'the Linux operating system and developed by the Open '
+                    'Handset Alliance, a consortium of over 30 hardware, '
+                    'software and telecom companies that focus on open '
+                    'standards for mobile devices. Led by search giant, '
+                    'Google, Android is designed to deliver a better and more '
+                    'open and cost effective mobile experience.    Unlocking '
+                    "Android: A Developer's Guide provides concise, hands-on "
+                    'instruction for the Android operating system and '
+                    'development tools. This book teaches important '
+                    'architectural concepts in a straightforward writing style '
+                    'and builds on this with practical and useful examples '
+                    'throughout. Based on his mobile development experience '
+                    'and his deep knowledge of the arcane Android technical '
+                    'documentation, the author conveys the know-how you need '
+                    'to develop practical applications that build upon or '
+                    'replace any of Androids features, however small.    '
+                    "Unlocking Android: A Developer's Guide prepares the "
+                    'reader to embrace the platform in easy-to-understand '
+                    'language and builds on this foundation with re-usable '
+                    'Java code examples. It is ideal for corporate and '
+                    'hobbyists alike who have an interest, or a mandate, to '
+                    "deliver software functionality for cell phones.    WHAT'S "
+                    "INSIDE:        * Android's place in the market      * "
+                    'Using the Eclipse environment for Android '
+                    'development      * The Intents - how and why they are '
+                    'used      * Application classes:            o '
+                    'Activity            o Service            o '
+                    'IntentReceiver       * User interface design      * Using '
+                    'the ContentProvider to manage data      * Persisting data '
+                    'with the SQLite database      * Networking examples      '
+                    '* Telephony applications      * Notification methods      '
+                    '* OpenGL, animation & multimedia      * Sample '
+                    'Applications  ',
+ 'pageCount': 416,
+ 'publishedDate': datetime.datetime(2009, 4, 1, 7, 0),
+ 'shortDescription': "Unlocking Android: A Developer's Guide provides concise, "
+                     'hands-on instruction for the Android operating system '
+                     'and development tools. This book teaches important '
+                     'architectural concepts in a straightforward writing '
+                     'style and builds on this with practical and useful '
+                     'examples throughout.',
+ 'status': 'PUBLISH',
+ 'thumbnailUrl': 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg',
+ 'title': 'Unlocking Android'}
+'total number of documents in the books collection'
+431
+'books_over_400'
+157
+'published_books_over_400'
+155
+'books with "Android" in their description'
+4
+'\ndistint category books list'
+[{'Category1': ['Java',
+                'Next Generation Databases',
+                'Computer Graphics',
+                'Perl',
+                'Theory',
+                'java',
+                'Microsoft',
+                'Object-Oriented Programming',
+                'Algorithmic Art',
+                'Object-Technology Programming',
+                'Programming',
+                'Mobile Technology',
+                'PHP',
+                'Software Engineering',
+                'Client-Server',
+                'SOA',
+                'Miscellaneous',
+                'Python',
+                'Open Source',
+                'Web Development',
+                'Microsoft .NET',
+                'internet',
+                'Internet',
+                'XML',
+                'Microsoft/.NET',
+                'PowerBuilder',
+                'In Action',
+                'Networking',
+                'Business'],
+  'Category2': ['Software Development',
+                'Software Engineering',
+                'Networking',
+                'P',
+                'Client-Server',
+                '',
+                'Business',
+                'Internet',
+                'Mobile',
+                '.NET',
+                'Open Source',
+                'Python',
+                'Computer Graphics',
+                'Theory',
+                'Java',
+                'S',
+                'Perl'],
+  '_id': None}]
+'books with specific programming languages'
+131
+'List of Statistical information about average number of pages per category:'
+[{'_id': 'Computer Graphics',
+  'avg_pages': 520.3333333333334,
+  'max_pages': 840,
+  'min_pages': 328},
+ {'_id': 'Java', 'avg_pages': 412.21875, 'max_pages': 1088, 'min_pages': 0},
+ {'_id': 'Next Generation Databases',
+  'avg_pages': 0.0,
+  'max_pages': 0,
+  'min_pages': 0},
+ {'_id': 'Theory',
+  'avg_pages': 420.42857142857144,
+  'max_pages': 591,
+  'min_pages': 280},
+ {'_id': 'Perl',
+  'avg_pages': 385.3333333333333,
+  'max_pages': 504,
+  'min_pages': 304},
+ {'_id': 'java', 'avg_pages': 0.0, 'max_pages': 0, 'min_pages': 0},
+ {'_id': 'Client Server',
+  'avg_pages': 368.0,
+  'max_pages': 368,
+  'min_pages': 368},
+ {'_id': 'In Action', 'avg_pages': 0.0, 'max_pages': 0, 'min_pages': 0},
+ {'_id': 'Microsoft', 'avg_pages': 572.375, 'max_pages': 925, 'min_pages': 344},
+ {'_id': 'Object-Oriented Programming',
+  'avg_pages': 408.5,
+  'max_pages': 512,
+  'min_pages': 350},
+ {'_id': 'Algorithmic Art', 'avg_pages': 0.0, 'max_pages': 0, 'min_pages': 0},
+ {'_id': 'Object-Technology Programming',
+  'avg_pages': 200.0,
+  'max_pages': 200,
+  'min_pages': 200},
+ {'_id': 'Computer Graph',
+  'avg_pages': 400.0,
+  'max_pages': 400,
+  'min_pages': 400},
+ {'_id': 'Programming',
+  'avg_pages': 362.1666666666667,
+  'max_pages': 570,
+  'min_pages': 0},
+ {'_id': 'Mobile Technology',
+  'avg_pages': 296.5,
+  'max_pages': 504,
+  'min_pages': 0},
+ {'_id': 'PHP', 'avg_pages': 552.0, 'max_pages': 552, 'min_pages': 552},
+ {'_id': 'Software Engineering',
+  'avg_pages': 287.75,
+  'max_pages': 544,
+  'min_pages': 0},
+ {'_id': 'P', 'avg_pages': 512.0, 'max_pages': 512, 'min_pages': 512},
+ {'_id': 'Miscella', 'avg_pages': 0.0, 'max_pages': 0, 'min_pages': 0},
+ {'_id': 'Client-Server',
+  'avg_pages': 516.0,
+  'max_pages': 1101,
+  'min_pages': 220},
+ {'_id': 'SOA', 'avg_pages': 250.0, 'max_pages': 250, 'min_pages': 250},
+ {'_id': 'S', 'avg_pages': 350.0, 'max_pages': 350, 'min_pages': 350},
+ {'_id': 'Miscellaneous',
+  'avg_pages': 706.0,
+  'max_pages': 1096,
+  'min_pages': 316},
+ {'_id': 'Python',
+  'avg_pages': 482.3333333333333,
+  'max_pages': 688,
+  'min_pages': 350},
+ {'_id': 'Mobile', 'avg_pages': 416.0, 'max_pages': 416, 'min_pages': 416},
+ {'_id': '.NET', 'avg_pages': 925.0, 'max_pages': 925, 'min_pages': 925},
+ {'_id': 'Open Source', 'avg_pages': 474.0, 'max_pages': 532, 'min_pages': 416},
+ {'_id': 'Web Development',
+  'avg_pages': 441.47058823529414,
+  'max_pages': 688,
+  'min_pages': 300},
+ {'_id': 'Microsoft .NET',
+  'avg_pages': 437.02941176470586,
+  'max_pages': 848,
+  'min_pages': 0},
+ {'_id': 'internet', 'avg_pages': 400.0, 'max_pages': 400, 'min_pages': 400},
+ {'_id': 'Internet',
+  'avg_pages': 441.2439024390244,
+  'max_pages': 912,
+  'min_pages': 0},
+ {'_id': 'XML', 'avg_pages': 482.0, 'max_pages': 680, 'min_pages': 304},
+ {'_id': 'Microsoft/.NET', 'avg_pages': 0.0, 'max_pages': 0, 'min_pages': 0},
+ {'_id': 'Software Development',
+  'avg_pages': 600.0,
+  'max_pages': 600,
+  'min_pages': 600},
+ {'_id': 'PowerBuilder',
+  'avg_pages': 433.7142857142857,
+  'max_pages': 550,
+  'min_pages': 362},
+ {'_id': '', 'avg_pages': 284.0, 'max_pages': 368, 'min_pages': 200},
+ {'_id': 'Networking',
+  'avg_pages': 366.42857142857144,
+  'max_pages': 591,
+  'min_pages': 0},
+ {'_id': 'Business',
+  'avg_pages': 404.1666666666667,
+  'max_pages': 696,
+  'min_pages': 180}]
+The year, month, day from the publication date [{'title': 'Specification by Example', 'year': 2011, 'month': 6, 'day': 3}, {'title': 'Flex 4 in Action', 'year': 2010, 'month': 11, 'day': 15}, {'title': 'Flex on Java', 'year': 2010, 'month': 10, 'day': 15}, {'title': 'Android in Action, Second Edition', 'year': 2011, 'month': 1, 'day': 14}, {'title': 'Griffon in Action', 'year': 2012, 'month': 6, 'day': 4}, {'title': 'OSGi in Depth', 'year': 2011, 'month': 12, 'day': 12}, {'title': 'Brownfield Application Development in .NET', 'year': 2010, 'month': 4, 'day': 16}, {'title': 'MongoDB in Action', 'year': 2011, 'month': 12, 'day': 12}, {'title': 'jQuery in Action, Second Edition', 'year': 2010, 'month': 6, 'day': 1}, {'title': 'ASP.NET 4.0 in Practice', 'year': 2011, 'month': 5, 'day': 15}, {'title': 'Hello! Python', 'year': 2012, 'month': 2, 'day': 13}, {'title': 'iOS in Practice', 'year': 2013, 'month': 11, 'day': 1}, {'title': 'The Quick Python Book, Second Edition', 'year': 2010, 'month': 1, 'day': 1}, {'title': 'Spring Dynamic Modules in Action', 'year': 2010, 'month': 9, 'day': 4}, {'title': 'Android in Practice', 'year': 2011, 'month': 9, 'day': 30}, {'title': 'Hello! HTML5 & CSS3', 'year': 2012, 'month': 10, 'day': 17}, {'title': 'Spring Roo in Action', 'year': 2012, 'month': 4, 'day': 13}, {'title': 'SOA Governance in Action', 'year': 2012, 'month': 7, 'day': 27}, {'title': 'OSGi in Action', 'year': 2011, 'month': 4, 'day': 6}, {'title': "SharePoint 2010 Site Owner's Manual", 'year': 2012, 'month': 2, 'day': 13}]
+'new attributes for authors'
+[{'_id': 20,
+  'author_1': 'Michael J. Barlotta',
+  'author_2': 'Jason R. Weiss',
+  'title': 'Taming Jaguar'},
+ {'_id': 11, 'author_1': 'Peter Armstrong', 'title': 'Flexible Rails'},
+ {'_id': 6,
+  'author_1': 'Satnam Alag',
+  'title': 'Collective Intelligence in Action'},
+ {'_id': 18,
+  'author_1': 'Michael J. Barlotta',
+  'title': 'Distributed Application Development with PowerBuilder 6.0'},
+ {'_id': 14,
+  'author_1': 'Levi Asher',
+  'author_2': 'Christian Crumlish',
+  'title': 'Coffeehouse'},
+ {'_id': 9,
+  'author_1': 'Andres Almiray',
+  'author_2': 'Danno Ferrin',
+  'author_3': '',
+  'title': 'Griffon in Action'},
+ {'_id': 21,
+  'author_1': 'Jon Barrilleaux',
+  'title': '3D User Interfaces with Java 3D'},
+ {'_id': 3, 'author_1': 'Gojko Adzic', 'title': 'Specification by Example'},
+ {'_id': 13, 'author_1': 'Peter Armstrong', 'title': 'Hello! Flex 4'},
+ {'_id': 7,
+  'author_1': 'Rob Allen',
+  'author_2': 'Nick Lo',
+  'author_3': 'Steven Brown',
+  'title': 'Zend Framework in Action'},
+ {'_id': 17, 'author_1': 'Kyle Banker', 'title': 'MongoDB in Action'},
+ {'_id': 15,
+  'author_1': 'Jamil Azher',
+  'title': 'Team Foundation Server 2008 in Action'},
+ {'_id': 2,
+  'author_1': 'W. Frank Ableson',
+  'author_2': 'Robi Sen',
+  'title': 'Android in Action, Second Edition'},
+ {'_id': 19,
+  'author_1': 'Michael Barlotta',
+  'title': 'Jaguar Development with PowerBuilder 7'},
+ {'_id': 5,
+  'author_1': 'Tariq Ahmed',
+  'author_2': 'Dan Orlando',
+  'author_3': 'John C. Bland II',
+  'title': 'Flex 4 in Action'},
+ {'_id': 10, 'author_1': 'Alexandre de Castro Alves', 'title': 'OSGi in Depth'},
+ {'_id': 1,
+  'author_1': 'W. Frank Ableson',
+  'author_2': 'Charlie Collins',
+  'author_3': 'Robi Sen',
+  'title': 'Unlocking Android'},
+ {'_id': 4,
+  'author_1': 'Tariq Ahmed with Jon Hirschi',
+  'author_2': 'Faisal Abid',
+  'title': 'Flex 3 in Action'},
+ {'_id': 8,
+  'author_1': 'Bernerd Allmon',
+  'author_2': 'Jeremy Anderson',
+  'title': 'Flex on Java'},
+ {'_id': 16,
+  'author_1': 'Kyle Baley',
+  'author_2': 'Donald Belcham',
+  'title': 'Brownfield Application Development in .NET'}]
+'publications per first author'
+[{'_id': None, 'publications': 37},
+ {'_id': 'Vikram Goyal', 'publications': 12},
+ {'_id': 'Don Jones', 'publications': 6},
+ {'_id': 'Craig Walls', 'publications': 4},
+ {'_id': 'Christian Bauer', 'publications': 4},
+ {'_id': 'Ted Neward', 'publications': 3},
+ {'_id': 'Richard Siddaway', 'publications': 3},
+ {'_id': 'W. Frank Ableson', 'publications': 3},
+ {'_id': 'Erik Hatcher', 'publications': 3},
+ {'_id': 'Jon Skeet', 'publications': 3}]
+'distribution of Number of authors per book'
+[{'_id': 6, 'count': 6},
+ {'_id': 2, 'count': 105},
+ {'_id': 1, 'count': 206},
+ {'_id': 4, 'count': 47},
+ {'_id': 7, 'count': 2},
+ {'_id': 0, 'count': 37},
+ {'_id': 3, 'count': 9},
+ {'_id': 5, 'count': 16},
+ {'_id': 8, 'count': 3}]
+'Count occurrence of each author by index'
+[{'_id': 'Vikram Goyal', 'occurrence': 12},
+ {'_id': 'Don Jones', 'occurrence': 6},
+ {'_id': 'Richard Siddaway', 'occurrence': 6},
+ {'_id': 'Gavin King', 'occurrence': 5},
+ {'_id': 'Christian Bauer', 'occurrence': 5},
+ {'_id': 'Jon Skeet', 'occurrence': 5},
+ {'_id': 'Yehuda Katz', 'occurrence': 5},
+ {'_id': 'Kalen Delaney', 'occurrence': 4},
+ {'_id': 'Craig Walls', 'occurrence': 4},
+ {'_id': 'Erik Hatcher', 'occurrence': 4},
+ {'_id': 'Greg Low', 'occurrence': 4},
+ {'_id': 'Dave Crane', 'occurrence': 3},
+ {'_id': 'Matthew Scarpino', 'occurrence': 3},
+ {'_id': 'David A. Black', 'occurrence': 3},
+ {'_id': 'Gary Gregory', 'occurrence': 3},
+ {'_id': 'W. Frank Ableson', 'occurrence': 3},
+ {'_id': 'Jimmy Bogard', 'occurrence': 3},
+ {'_id': 'Paul S. Randal', 'occurrence': 3},
+ {'_id': 'Shannon Appelcline', 'occurrence': 3},
+ {'_id': 'Robi Sen', 'occurrence': 3}]
