@@ -3,3 +3,4 @@ sample_training/.mongodb
 *.bson
 *.wt
 *.0000000002
+*.0000000001
